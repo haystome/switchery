@@ -16,7 +16,6 @@
  */
 
 var transitionize = require('transitionize')
-  , fastclick = require('fastclick')
   , classes = require('classes')
   , events = require('events');
 
@@ -269,7 +268,6 @@ Switchery.prototype.handleChange = function() {
 Switchery.prototype.handleClick = function() {
   var switcher = this.switcher;
 
-  fastclick(switcher);
   this.events.bind('click', 'bindClick');
 };
 
